@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="212" width="192" viewbox="0 0 192 212">
+    <mask id="circleCut">
+        <rect x="0" y="0" width="192" height="212" fill="black"/>
+        <rect x="0" y="0" width="192" height="14" fill="white"/>
+        <rect x="0" y="198" width="192" height="14" fill="white"/>
+    </mask>
+    <rect x="0" y="0" width="11" height="212"
+          style="stroke:none; fill:#fffff4"/>
+    <rect x="181" y="0" width="11" height="212"
+          style="stroke:none; fill:#fffff4"/>
+          <path d="M4 42 Q4 14, 32 14 L12 14 L4 22 L4 42
+                M160 14 Q188 14, 188 42 L188 22 L180 14 L160 14
+                M188 170 Q188 198, 160 198 L180 198 L188 190 L188 170
+                M32 198 Q4 198, 4 170 L4 188 L12 198 L32 198
+                M10 22 L10 190 M182 22 L182 190"
+            style="stroke:none; fill:#fffff4;"></path>
+    <path d="M4 26 L4 22 L12 14 L180 14 L188 22 L188 190 L180 198 L12 198 L4 190 L4 26
+                M28 14 Q32 10, 32 6 L 160 6 Q160 10, 164 14
+                M28 198 Q32 202, 32 206L160 206 Q160 202, 164 198"
+            style="stroke:#C9AD6A; fill:none; stroke-width: 4px;"></path>
+    <path d="M4 26 L4 22 L12 14 L180 14 L188 22 L188 190 L180 198 L12 198 L4 190 L4 26"
+            style="stroke:#212529; fill:none; stroke-width: 2px;"></path>
+    <path d="M28 14 Q32 10, 32 6 L160 6 Q160 10, 164 14
+                M28 198 Q32 202, 32 206L160 206 Q160 202, 164 198"
+            style="stroke:#212529; fill:none; stroke-width: 2px;"></path>
+    <circle cx="96" cy="66" r="64"
+            style="stroke:#212529; fill:none; stroke-width: 1.5px;" mask="url(#circleCut)"></circle>
+    <circle cx="96" cy="146" r="64"
+            style="stroke:#212529; fill:none; stroke-width: 1.5px;" mask="url(#circleCut)"></circle>
+    <path d="M32 10 L66 10 M126 10 L160 10
+                M32 202 L66 202 M126 202 L 160 202"
+            style="stroke:#212529; fill:none; stroke-width: 1.5px;"></path>
+    <circle cx="64.75" cy="10" r="2" style="stroke:none;fill:#212529;"/>
+    <circle cx="127.25" cy="10" r="2" style="stroke:none;fill:#212529;"/>
+    <circle cx="64.75" cy="202" r="2" style="stroke:none;fill:#212529;"/>
+    <circle cx="127.25" cy="202" r="2" style="stroke:none;fill:#212529;"/>
+    <path d="M4 42 Q4 14, 32 14
+                M160 14 Q188 14, 188 42
+                M188 170 Q188 198, 160 198
+                M32 198 Q4 198, 4 170
+                M10 22 L10 190 M182 22 L182 190"
+            style="stroke:#212529; fill:none; stroke-width: 1.5px;"></path>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+    <mask id="roundCorner">
+        <rect x="0" y="0" width="144" height="144" fill="white"/>
+        <circle cx="0" cy="0" r="26" fill="black"/>
+        <circle cx="0" cy="144" r="26" fill="black"/>
+        <circle cx="144" cy="0" r="26" fill="black"/>
+        <circle cx="144" cy="144" r="26" fill="black"/>
+    </mask>
+    <path d="M10 18 Q10 10, 18 10 L42 10 Q40 14, 56 14 L88 14 Q104 14, 102 10 L126 10 Q134 10, 134 18 L134 126 Q134 134, 126 134 L102 134 Q104 130, 88 130 L56 130 Q38 130, 40 134 L18 134 Q10 134, 10 128 L10 16"
+        style="stroke:none; fill:#e0e5c1;" mask="url(#roundCorner)"/>
+    <path d="M10 18 Q10 10, 18 10 L42 10 Q40 14, 56 14 L88 14 Q104 14, 102 10 L126 10 Q134 10, 134 18 L134 126 Q134 134, 126 134 L102 134 Q104 130, 88 130 L56 130 Q38 130, 40 134 L18 134 Q10 134, 10 128 L10 16
+       M10 36 L4 30 L4 24 Q24 24, 24 4 L120 4 Q120 24, 140 24 L140 30 L134 36
+       M10 108 L4 114 L4 120 Q24 120, 24 140 L120 140 Q120 120, 140 120 L140 114 L134 108"    
+       style="stroke:#C9AD6A; fill:none; stroke-width: 4px;"></path>
+    <circle cx="56" cy="4" r="3"
+    style="fill:#C9AD6A;"></circle>
+    <circle cx="88" cy="4" r="3"
+    style="fill:#C9AD6A;"></circle>
+    <circle cx="56" cy="140" r="3"
+    style="fill:#C9AD6A;"></circle>
+    <circle cx="88" cy="140" r="3"
+    style="fill:#C9AD6A;"></circle>
+    <path d="M10 18 Q10 10, 18 10 L42 10 Q40 14, 56 14 L88 14 Q104 14, 102 10 L126 10 Q134 10, 134 18 L134 126 Q134 134, 126 134 L102 134 Q104 130, 88 130 L56 130 Q38 130, 40 134 L18 134 Q10 134, 10 128 L10 16
+       M10 36 L4 30 L4 24 Q24 24, 24 4 L120 4 Q120 24, 140 24 L140 30 L134 36
+       M10 108 L4 114 L4 120 Q24 120, 24 140 L120 140 Q120 120, 140 120 L140 114 L134 108"    
+       style="stroke:#212529; fill:none; stroke-width: 2px;"></path>
+    <circle cx="56" cy="4" r="2"
+    style="fill:#212529;"></circle>
+    <circle cx="88" cy="4" r="2"
+    style="fill:#212529;"></circle>
+    <circle cx="56" cy="140" r="2"
+    style="fill:#212529;"></circle>
+    <circle cx="88" cy="140" r="2"
+    style="fill:#212529;"></circle>
+</svg>

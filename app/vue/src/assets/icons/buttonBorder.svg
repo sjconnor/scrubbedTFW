@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="96" width="96" viewbox="0 0 96 96">
+    <mask id="cornerCut">
+        <rect x="0" y="0" width="96" height="96" fill="black"/>
+        <rect x="8" y="0" width="78" height="96" fill="white"/>
+    </mask>
+    <path d="M4 32 Q4 4, 32 4 L64 4 Q92 4, 92 32 L92 64 Q92 92, 64 92 L32 92 Q4 92, 4 64 L4 32"
+          style="stroke:none;fill:#e0e5c1;" mask="url(#cornerCut)"></path>
+    <path d="M4 16 L4 12 L12 4 L84 4 L92 12 L92 84 L84 92 L12 92 L4 84 L4 16"
+          style="stroke:#C9AD6A; fill:none; stroke-width: 4px;"></path>
+    <path d="M4 16 L4 12 L12 4 L84 4 L92 12 L92 84 L84 92 L12 92 L4 84 L4 16"
+          style="stroke:#212529; fill:none; stroke-width: 2px;"></path>
+    <path d="M4 32 Q4 4, 32 4 M64 4 Q92 4, 92 32 M92 64 Q92 92, 64 92 M32 92 Q4 92, 4 64
+             M10 12 L10 84 M86 12 L86 84"
+          style="stroke:#212529; fill:none; stroke-width: 1.5px;"></path>
+</svg>

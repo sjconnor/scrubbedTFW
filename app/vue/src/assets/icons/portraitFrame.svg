@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+    <mask id="cutCircleSides">
+        <rect x="0" y="0" width="27" height="144" fill="black"/>
+        <rect x="27" y="0" width="90" height="144" fill="white"/>
+        <rect x="117" y="0" width="27" height="144" fill="black"/>
+    </mask>
+    <circle cx="72" cy="72" r="64"
+            stroke-width="4px" stroke="#C9AD6A" fill="none"/>
+    <circle cx="72" cy="72" r="64"
+            stroke-width="2px" stroke="#000" fill="none"/>
+    <circle cx="72" cy="72" r="70"
+            stroke-width="1px" stroke="#000" fill="none"
+            mask="url(#cutCircleSides)"/>        
+    <path d="M27 27 L27 14 L29 16 L27 18"
+          stroke-width="1px" stroke="#000" fill="#000"/>
+    <path d="M117 27 L117 14 L115 16 L117 18"
+          stroke-width="1px" stroke="#000" fill="#000"/>
+    <path d="M27 117 L27 130 L29 128 L27 126"
+          stroke-width="1px" stroke="#000" fill="#000"/>
+    <path d="M117 117 L117 130 L115 128 L117 126"
+          stroke-width="1px" stroke="#000" fill="#000"/>
+</svg>

@@ -1,0 +1,461 @@
+#app {
+  font-family: 'Baskerville'; /* the 5e main text font per https://www.kirith.com/tsr-fonts/ */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+input {
+  font-family: 'Baskerville'; /* some fonts do not support the caret - change with caution! */
+  padding-left: 5px;
+}
+
+.scroll-background {
+  background:
+    url(../img/bg-top.png) no-repeat top,
+    url(../img/bg-middle.jpg) repeat-y center,
+    url(../img/bg-bottom.png) no-repeat bottom;
+  background-color: black;
+  background-size: 100%;
+  /* BG Images are 3414 pixels wide, and we want to place the padding 225 pixels in.
+     Scale the padding as the viewport changes size. */
+  padding: calc(100% * 225/3414);
+  min-height: 100%;
+}
+
+.btn {
+  font-family: 'ScalySansCaps';
+}
+
+.long_text {
+  font-family: 'Baskerville'; /* the 5e main text font per https://www.kirith.com/tsr-fonts/ */
+}
+
+.title {
+  font-family: 'MrEavesSmallCaps';
+  font-size: 4em;
+}
+
+.title2 {
+  font-family: 'MrEavesSmallCaps';
+  font-size: 1.5em;
+}
+
+.title3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'MrEavesSmallCaps';
+  font-size: 1em;
+}
+
+.no-negging {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.spell {
+  align-items: center;
+}
+
+.spell-name {
+  font-family: 'MrEavesSmallCaps';
+  font-size: 1.2em;
+}
+
+.spell-stat {
+  font-family: 'Baskerville';
+  font-size: 1em;
+}
+
+.spell-stat-col {
+  font-family: 'Baskerville';
+  font-size: 1em;
+}
+
+.spell-slots {
+  justify-items: center;
+
+}
+
+.modal-header {
+  padding: 0px !important;
+}
+
+.char-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.char-info-text {
+  display: flex;
+  font-size: 0.75em;
+}
+
+.char-edit-container-border {
+  font-family: 'MrEavesSmallCaps';
+  font-size: 0.85em;
+  border: 20px solid;
+  border-image: url("../img/border.png") 115 fill;
+  border-image-outset: 1em;
+  margin: 0 -3em;
+}
+
+#edit_char button {
+  width: 100%;
+}
+
+.char-edit-text {
+  font-family: 'ScalySansCaps';
+  padding-bottom: 0!important;
+  padding-top: 8px;
+  line-height: 2;
+}
+
+#char-editable {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1.5em 1.5em 1.5em;
+  grid-gap: 0.5em;
+}
+
+.container-border {
+  border: 20px solid;
+  border-image: url("../icons/characterPanelBorder.svg") 30 fill repeat;
+  border-image-width: 30px;
+  max-width: 800px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.tab-content {
+  height: 50vh; /* scrollbar */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.h5 {
+  font-size: 1.1rem;
+}
+
+.btn-dark:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+a.nav-link, a.nav-link.active {
+  color: rgba(0,0,0,.6);
+  font-size: 22px;
+  font-family: 'MrEavesSmallCaps';
+  background-color: transparent !important;
+}
+
+a.nav-link:hover {
+  color: #212529;
+}
+
+.nav-tabs .nav-link.active {
+  color: #212529;
+}
+
+.plaintextButton {
+  background-color:transparent;
+  border: none;
+  font-family: 'ScalySansCaps';
+  font-size: 18px;
+}
+
+.plaintextButton:focus {
+  outline: none;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  height: 24px;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.icon-button img {
+  height: 24px;
+  width: 24px;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+/**
+ * Loading indicator
+ */
+
+ .dot1 {
+  animation: first-dot  ease 3s infinite;
+}
+
+@keyframes first-dot {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.dot2 {
+  animation: second-dot  ease 3s infinite;
+}
+
+@keyframes second-dot {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.dot3 {
+  animation: third-dot  ease 3s infinite;
+}
+
+@keyframes third-dot {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading-message {
+  font-family: 'ScalySansCaps';
+  font-size: 20px;
+  text-align: center;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/**
+ * PHB-related styles
+ */
+
+ /* Open source PHB-inspired fonts */
+@font-face {
+  font-family: 'MrEavesSmallCaps';
+  src: url('../fonts/MrEavesSmallCaps.otf') format('opentype');
+}
+
+@font-face{
+  font-family: 'ScalySansCaps';
+  src: url('../fonts/ScalySansCaps.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'ScalySansCaps';
+  src: url('../fonts/ScalySansCapsBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'ScalySansCaps';
+  src: url('../fonts/ScalySansCapsItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'ScalySansCaps';
+  src: url('../fonts/ScalySansCapsBoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Styles for PHBish elements */
+
+.phbButton {
+  width: 120px;
+  border: solid;
+  border-image: url('../icons/buttonBorderDistinct.svg') repeat;
+  border-image-slice: 18 30 fill;
+  border-image-width: 18px 30px;
+  padding: 8px 6px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color:transparent;
+  font-family: 'ScalySansCaps';
+  font-size: 18px;
+}
+
+.phbButton:focus {
+  outline: none;
+}
+
+.phbButton:disabled {
+  border-image: url('../icons/buttonBorderDistinctDisabled.svg') repeat;
+  border-image-slice: 18 30 fill;
+  border-image-width: 18px 30px;
+  color: #636363;
+}
+
+.phbDialogHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phbDialogHead h2 {
+  display: inline-block;
+}
+
+.phbIconButton {
+  background: none;
+  border: none;
+  height: 24px;
+}
+
+.phbIconButton img {
+  height: 24px;
+  width: 24px;
+}
+
+.phbIconButton:focus {
+  outline: none;
+}
+
+.phbInputLabel {
+  display: inline-block;
+  margin-right: 8px;
+  min-width: 86px;
+  text-transform: capitalize;
+  font-family: 'ScalySansCaps';
+  font-size: 18px;
+}
+
+.phbTextInput {
+  background-color: transparent;
+  border-bottom: 2px solid #C9AD6A;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #212529;
+  padding: 0 2px;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-family: 'ScalySansCaps';
+  font-size: 18px;
+}
+
+.phbTextInput:focus {
+  outline: none;
+}
+
+.phbTextInputContainer {
+  display: flex;
+  margin: 12px 0;
+}
+
+.phbDialogBody {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFF4;
+  border-width: 6px 0;
+  border-style: solid;
+  border-color: #212529;
+  box-shadow: 0 6px 4px rgba(0,0,0,.2);
+  padding: 16px;
+  font-family: 'ScalySansCaps';
+  font-size: 18px;
+  z-index: 2;
+}
+.phbDialogCornerContainer {
+  display: inline-block;
+  overflow: hidden;
+  width:20px;
+  height:30px;
+  z-index: 1;
+}
+.phbDialogScrollContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.phbDialogCornerScroll {
+  filter: drop-shadow(0px 6px 1px rgba(0,0,0,.2));
+}
+
+.phbDialogContentOverride {
+  background-color: transparent !important;
+  border: none !important;
+  margin: 24px;
+
+}
+.phbDialogDialogOverride {
+  padding: 0 !important;
+}
+
+.phbSelect {
+  background: none;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #C9AD6A;
+  border-radius: 0;
+}
+
+.phbSelect:focus {
+  outline: none;
+}
